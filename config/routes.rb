@@ -7,10 +7,12 @@ member do
   post :jion
   post :quit
 end
-
-
-  resources :posts
+resources :posts
 end
+namespace :account do
+  resources :groups
+end
+
 root "groups#index"
 #root "welcome#index"
 end
